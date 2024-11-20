@@ -1,5 +1,7 @@
 # Sentiment Analysis Web Application
 
+This Web app and Training the model is doing by myself with support of IA for educational propourse
+
 A web application for analyzing the sentiment of user-provided text (positive or negative). Built using **Flask** for the backend and **scikit-learn** for the machine learning model.
 
 ## Features
