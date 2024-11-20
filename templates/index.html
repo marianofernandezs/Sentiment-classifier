@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>Sentiment Analysis</title>
+</head>
+
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form method="POST" action="/predict">
+        <label for="text">Enter a text in English to analyze:</label><br />
+        <textarea id="text" name="text" rows="4" cols="10" required></textarea>
+        <button type="submit">Analysis Sentiment</button>
+    </form>
+
+    {% if error %}
+    <p style="color: red">({ error })</p>
+    {% endif %} {% if prediction %}
+    <h2>Results:</h2>
+    <p>Text: "{{ text }}"</p>
+    <p>Predicted Sentiment: <strong>{{ prediction }}</strong></p>
+    {% endif %}
+</body>

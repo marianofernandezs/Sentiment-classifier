@@ -1,0 +1,15 @@
+Precisión del modelo: 0.89
+ROC AUC Score: 0.96
+Matriz de confusión:
+[[4354  607]
+ [ 473 4566]]
+Reporte de clasificación:
+              precision    recall  f1-score   support
+
+    negative       0.90      0.88      0.89      4961
+    positive       0.88      0.91      0.89      5039
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
